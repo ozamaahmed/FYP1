@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Subtitle Search</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head> 
+<body> 
+    <div class="container">
+        <h1>YouTube Subtitle Search</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="videoUrl">Video URL:</label>
+                <input type="text" id="videoUrl" name="videoUrl" placeholder="Enter YouTube video URL" required>
+            </div>
+            <div class="form-group">
+                <label for="query">Query:</label>
+                <input type="text" id="query" name="query" placeholder="Enter your search query" required>
+            </div>
+            <button type="submit" class="btn">Process</button>
+        </form>
+        <div class="results">
+            <h2>Results</h2> 
+            <div id="output"></div> 
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

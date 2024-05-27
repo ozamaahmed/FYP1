@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Processing</title>
+</head>
+<body>
+    <h1>String Processing</h1>
+    <form id="stringForm">
+        <label for="string1">String 1:</label>
+        <input type="text" id="string1" name="string1"><br>
+        <label for="string2">String 2:</label>
+        <input type="text" id="string2" name="string2"><br>
+        <button type="submit">Process</button>
+    </form>
+    <div id="output"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#stringForm').submit(function(event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    url: '/process',
+                    type: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        $('#output').text(response.output.join(', '));
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+

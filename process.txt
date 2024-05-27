@@ -1,0 +1,15 @@
+i made a python back end file, i made app.py and index.html.
+
+
+
+-> now what i need to do is 
+
+-> write code that smartly combines subtitles
+
+-> for videos with only auto generated subtitles, join them into one subtitle too, 
+
+-> make a case where there are subtitles in the video, then use whisper AI to get the subtitles
+
+-> display in the output that there are no subs for this video so, creating the subs, it takes time, then possibly show how much time it would take. 
+
+-> make proper front end UI overall
